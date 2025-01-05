@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Home</title>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="wwidth=device-width, initial-scale=1.0" />
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+	<div class="d1" style="">
+	<section id="header">
+		<a href="index.html">
+			<img src="images/JapanLogo2.png" class="off" alt="logo">
+			<img src="images/JapanLogo3.png" class="on" alt="logo">
+		</a>
+		<div class="container">
+			<img src="images/play.png" alt="play" id="icon">
+		
+		</div>
+		<div>
+			<ul id="navbar">
+				<li><a href="tour.html">Tourist Locations</a></li>
+				<li><a href="history.html">History</a></li>
+				<li><a href="festivals.html">Festivals</a></li>
+				<li><a href="famousInhab.html">Famous Inhabitants</a></li>
+			</ul>
+		
+		</div>
+		
+	</section>
+	</div>
+	<div class="herobanner">
+		
+		
+		</div>
+
+<audio id="mySong">
+<source src="images/music.mp3" type="audio/mp3">
+</audio>
+<script>
+var mySong = document.getElementById("mySong");
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+
+    if(mySong.paused){
+	mySong.play();
+	icon.src="images/pause.png";
+	}else{
+	mySong.pause();
+	icon.src="images/play.png";
+	}
+}
+</script>
+</body>
+
+<footer>
+
+
+</footer>
+
+</html>
